@@ -56,30 +56,16 @@ class Comment {
     -User author;
     -LocalDateTime createdAt;
 }
-enum Priority {
-    LOW,
-    MEDIUM,
-    HIGH
-}
 class Role {
     -Long id;
-    -RoleName name;
-}
-enum RoleName {
-    ROLE_USER,
-    ROLE_ADMIN
-}
-enum Status {
-    TODO,
-    IN_PROGRESS,
-    DONE
+    -String name;
 }
 class Task {
     -Long id;
     -String title;
     -String description;
-    -Priority priority;
-    -Status status;
+    -String priority;
+    -String status;
     -LocalDate dueDate;
     -User assignee;
     -LocalDateTime createdAt;
