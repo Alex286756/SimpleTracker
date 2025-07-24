@@ -40,7 +40,8 @@ REST API
 Поиск и фильтрация задач
 
 Архитектура
-```classDiagram
+```mermaid
+classDiagram
 class Attachment {
     -Long id;
     -String filename;
